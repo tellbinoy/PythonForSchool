@@ -1,0 +1,84 @@
+<big><b>GST Calculator</b></big><br><br>
+
+<p>
+    Hello there<br>
+    Upload a CSV file containg the following columns
+    <li>
+    Item - string
+    </li>
+    <li>
+    Value - number
+    </li>
+    <li>
+    Taxrate - number
+    </li>
+    <li>
+    Type - string
+    </li>
+</p>
+<table>
+<tr>
+    <td>
+        (POST)Upload the CSV to get the statistics of the item's <b><big>value</big></b> column
+    </td>
+    <td>
+    <form action="/valueStat/" method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+            <input type="file" name="csv_file" id="csv_file" required="True">
+             <button>Upload </button>
+    </form>
+    </td>
+</tr>
+<tr>
+    <td>
+        (POST)Upload the CSV to store it in the database
+    </td>
+    <td>
+    <form action="/uploadFile/" method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+            <input type="file" name="csv_file" id="csv_file" required="True">
+             <button>Upload </button>
+    </form>
+    </td>
+</tr>
+<tr>
+    <td>
+        (GET)Get the value of an item stored in the database
+    </td>
+    <td>
+    <form action="/getItemInfo" method="GET">
+    {% csrf_token %}
+            <input type="text" name="itemName" required="True">
+             <button>Get Item</button>
+    </form>
+    </td>
+</tr>
+
+<tr>
+    <td>
+        (GET)Show me a graph of prices for all items in a certain type:
+    </td>
+    <td>
+    <form action="/showGraph" method="GET">
+    {% csrf_token %}
+            <input type="text" name="itemType" required="True">
+             <button>Show Graph</button>
+    </form>
+    </td>
+</tr>
+
+<tr>
+    <td>
+        (GET)Download the file containg <b>Item details including their GST Values from database</b>
+        The file is present in gstinfo folder
+    </td>
+    <td>
+    <form action="/downloadFile" method="GET">
+    {% csrf_token %}
+             <button>Download File</button>
+    </form>
+    </td>
+</tr>
+
+
+</table>

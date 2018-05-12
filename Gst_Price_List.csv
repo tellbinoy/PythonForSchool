@@ -1,0 +1,31 @@
+Item,Value,Taxrate,Type,Price
+Bag Sky,3500.0,5.0,Bag,3675.0
+Bag Traveller,3500.0,15.0,Bag,4025.0
+Bag Woodland,3500.0,10.0,Bag,3850.0
+Bottle Gran,80.0,10.0,Bottle,88.0
+Bottle Rune,80.0,5.0,Bottle,84.0
+BottleOpala,80.0,5.0,Bottle,84.0
+Chair Damro,800.0,10.0,Chair,880.0
+Chair JFA,800.0,10.0,Chair,880.0
+Chair Res,800.0,10.0,Chair,880.0
+Clock Casio,250.0,5.0,Clock,262.5
+Clock Fossil,250.0,10.0,Clock,275.0
+ClockTitan,250.0,5.0,Clock,262.5
+Fan Chrompton,5250.0,15.0,Fan,6037.5
+Fan Havels,5250.0,15.0,Fan,6037.5
+Fan Kethan,5250.0,15.0,Fan,6037.5
+head Phone Bose,1750.0,15.0,head Phone,2012.5
+head Phone JBL,1750.0,10.0,head Phone,1925.0
+head Phone Sony,1750.0,10.0,head Phone,1925.0
+Laptop Alien,73000.0,15.0,Laptop,83950.0
+Laptop HP,73000.0,15.0,Laptop,83950.0
+Laptop Lenovo,73000.0,15.0,Laptop,83950.0
+Mobile Apple,24500.0,15.0,Mobile,28175.0
+Mobile Moto,24500.0,5.0,Mobile,25725.0
+Mobile OnePlus,24500.0,10.0,Mobile,26950.0
+Sun glasses Rayban,6000.0,10.0,Sun glasses,6600.0
+Sun glasses Tag,6000.0,10.0,Sun glasses,6600.0
+Sun glasses Varil,6000.0,10.0,Sun glasses,6600.0
+Table Damro,5000.0,5.0,Table,5250.0
+Table JFA,5000.0,5.0,Table,5250.0
+Table Res,5000.0,5.0,Table,5250.0

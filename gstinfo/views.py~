@@ -1,0 +1,23 @@
+from django.http import HttpResponse
+from django.shortcuts import render
+
+#@render_to('gstinfo:template_name.html')
+#@login_required
+def hello(request):
+        html = "<html><body>The time is now.</body></html>"
+	return HttpResponse(html)
+
+def landing(request):
+	print("Entered - Landing")
+	question = 'To be or not to be'
+	return render(request, 'landing.html', {'question': question})
+
+def readFile(request):
+	print("Entered - readFile")
+	name = request.POST.get("firstname")
+	fileGot = request.FILES["csv_file"]	
+	if not fileGot.name.endswith('.csv'):
+			return render(request, 'FileInfo.html', {'message':'File is not a csv'})
+	return render(request, 'FileInfo.html', {'message':'File is CSV'})
+	
+

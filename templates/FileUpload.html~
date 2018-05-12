@@ -1,0 +1,7 @@
+<html>
+<br><br>
+File upload status: {{message}}<br>
+If your data is already uploaded, it wont be uploaded again. Check your DB in that case.
+<br><br>
+<a href='\home'>Back</a>
+</html>
